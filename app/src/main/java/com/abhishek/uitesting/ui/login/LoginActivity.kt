@@ -5,7 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.abhishek.uitesting.MainActivity
 import com.abhishek.uitesting.R
-import kotlinx.android.synthetic.main.activity_login.login
+import kotlinx.android.synthetic.main.activity_login.loginCall
 
 class LoginActivity : AppCompatActivity() {
 
@@ -13,7 +13,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        login.setOnClickListener {
+        loginCall.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
